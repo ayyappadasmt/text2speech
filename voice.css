@@ -1,0 +1,82 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #66101f);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Styling */
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+    width: 60%;
+    max-width: 500px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Title */
+h2 {
+    color: #ff4b5c;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Experiment Text */
+#experiment-text {
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    animation: fadeInText 2s ease-in-out;
+}
+
+/* Buttons Styling */
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    background: #ff4b5c;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.4);
+}
+
+/* Button Hover Effects */
+button:hover {
+    background: #ff1e40;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(255, 0, 0, 0.6);
+}
+
+/* Button Active (Click Effect) */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInText {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}

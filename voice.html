@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Assistant for Labs</title>
+    <link rel="stylesheet" href="voice.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>🔬 AI Lab Voice Assistant</h2>
+        <p id="experiment-text">
+            Step 1: Take a beaker and pour 100ml of water into it. 
+            Step 2: Add a few drops of hydrochloric acid. 
+            Step 3: Observe the reaction and note down your observations.
+        </p>
+
+        <div class="buttons">
+            <button onclick="speakText()">🔊 Read Instructions</button>
+            <button onclick="pauseSpeech()">⏸ Pause</button>
+            <button onclick="resumeSpeech()">▶ Resume</button>
+            <button onclick="stopSpeech()">⏹ Stop</button>
+        </div>
+    </div>
+
+    <script src="voice.js"></script>
+</body>
+</html>
